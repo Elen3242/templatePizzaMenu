@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Amatic SC', cursive;
+    scroll-behavior: smooth;
+}
+
+// nav
+nav {
+    background-color: rgba(0, 0, 0, 0.616);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 888;
+        &:hover {
+            background-color: black;
+        }
+     ul {
+        display: flex;
+        li {
+            list-style: none;
+            padding: 10px 20px;
+            &:hover {
+                background-color: grey;
+            }
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 20px;
+            }
+        }
+     }
+     @media (max-width:600px) {
+        display: none;
+     }
+}
+// header 
+ header {
+    background-image: url(https://www.w3schools.com/w3images/pizza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    filter: grayscale(50%);
+
+    .pizza_container {
+        font-size: 25px;
+        text-align: center;
+        h1 {
+            color: white;
+            margin-bottom: 20px;
+        }
+        a {
+            text-decoration: none;
+            padding: 15px;
+            background-color: black;
+            color: white;
+            &:hover {
+                background-color: grey;
+            }
+        }
+    }
+         .open {
+             position: absolute;
+             bottom: 20px;
+             left: 20px;
+             color: white;
+             background-color: black;
+             padding: 15px;
+            }
+        }
+        // menu
+ .main_menu   {
+    background-color: black;
+    padding: 64px 20px;
+    h2 {
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .menu_container {
+        max-width: 990px;
+        margin: auto;
+        border: 2px solid white;
+        > div {
+            ul {
+                display: flex;
+                justify-content: space-around;
+                background-color: black;
+                > li {
+                    list-style: none;
+                    padding: 20px;
+                    text-align: center;
+                    flex-grow:1;
+                    &:hover {
+                        background-color: red;
+                        cursor: pointer;
+                    }
+                    > a {
+                        text-decoration: none;
+                        color: white;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        .parent {
+            background-color: white;
+            padding: 25px 12px 50px 12px;
+            > div {
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+               h3 {
+                .meat {
+                    background-color: red;
+                    color: white;
+                    padding: 10px;
+                    border-radius: 10px;
+                }
+                .parma {
+                    color: white;
+                    padding: 10px;
+                    background-color: grey;
+                    border-radius: 10px;
+                }
+               }
+                > h4 {
+                    padding: 20px;
+                    background-color: grey;
+                    border-radius:12px ;
+                    color: white;
+                    margin-top: 8px;
+                }
+            }
+             p {
+                    font-size: 18px;
+                    color: rgba(0, 0, 0, 0.671);
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                }
+        }
+    }
+ }      
+//  about
+ article {
+    background-color: rgb(133, 51, 65);
+    padding: 64px 20px;
+    h2 {
+        text-align: center;
+        color: white;
+    }
+    .about_container {
+        max-width: 990px;
+        margin: auto;
+        .hours {
+            width: 75%;
+        }
+        > p {
+            margin-top: 25px;
+            color: white;
+        }
+        > div {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            color: white;
+
+
+            p {
+                margin-top: 20px;
+                color: white;
+            }
+            img {
+                border-radius: 50%;
+            }
+        }
+          h3 {
+                    color: white;
+                    margin-top: 15px;
+                }
+       img {
+        margin-top: 30px;
+       }
+    }
+ }
+ div {
+    img {
+        filter: grayscale(50%);
+        vertical-align: middle;
+        height: auto;
+        max-width: 100%;
+    }
+ }
+// contact
+ .contact_container {
+    background-color: #607d8b;
+    padding: 64px 20px;
+        .contact_main {
+            max-width: 990px;
+            margin: auto;
+            h2 {
+                text-align: center;
+                color: white;
+            }
+
+            p {
+                color: white;
+                margin-top: 15px;
+                font-size: 20px;
+                padding: 10px;
+
+                span {
+                    background-color: black;
+                    padding: 5px;
+                }
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+
+                input {
+                    padding: 15px;
+                    margin-top: 15px;
+                    width: 100%;
+                }
+                > div  >  button {
+                    padding: 15px;
+                    margin-top: 15px;
+                    width: 100%;
+                    &:hover {
+                        background-color: rgba(128, 128, 128, 0.466);
+                        cursor: pointer;
+                        border: none;
+                    }
+                
+                }
+             
+            }
+        }
+ }
+//  footer
+ footer {
+    padding: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    p {
+        color: white;
+        a {
+            color: white;
+            margin-left: 10px;
+            &:hover {
+               color:green ;
+            }
+        }
+    }
+ }
